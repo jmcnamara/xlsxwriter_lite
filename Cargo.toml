@@ -1,0 +1,18 @@
+[package]
+name = "xlsxwriter_lite"
+description = "Python wrapper of the rust_xlsxwriter library for writing Excel 2007 xlsx files"
+authors = ["John McNamara <jmcnamara@cpan.org>"]
+repository = "https://github.com/jmcnamara/xlsxwriter_lite"
+keywords = ["excel", "xlsx"]
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "xlsxwriter_lite"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.20.2", features = ["extension-module"] }
+rust_xlsxwriter = "0.62.0"
